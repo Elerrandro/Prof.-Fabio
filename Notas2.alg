@@ -46,7 +46,7 @@ fimpara
 
 escreval("===================================================================")
 
-Escreval("Nome            |   N1  |   N2  |   N3  | Média | Situação   |")
+Escreval("Nome            |   N1  |   N2  |   N3  | Média | Situação  |")
 Escreval("--------------------------------------------------------------")
 
 para linha de 1 ate 3 faca
