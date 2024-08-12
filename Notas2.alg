@@ -1,4 +1,10 @@
-algoritmo "AvaliaÁ„o de Notas"
+#A) Leia 3 Nomes, e para cada nome 3 notas, calcule a m√©dia dos alunos e ao final escreva "Aprovado" para notas maiores que 5 e "Reprovado" para notas menores que 6.
+para isso use quantas vari√°veis forem necess√°rias.
+
+#EU FIZ MEU C√ìDIGO NO VISUALG, SE PRETENDE TESTA-LO COPIE A PARTIR DA LINHA 7 ATE A LINHA 61.
+
+
+algoritmo "Avalia√ß√£o de Notas"
 var
    nomes: vetor[1..3] de caractere
    notas: vetor[1..3, 1..3] de numerico
@@ -34,13 +40,13 @@ para linha de 1 ate 3 faca
 
 Escreva("Nome: ", nome1)
 Escreva(" Notas: ", n1, n2, n3)
-Escreva(" MÈdia: ", media)
-Escreval(" SituaÁ„o: ", status)
+Escreva(" M√©dia: ", media)
+Escreval(" Situa√ß√£o: ", status)
 fimpara
 
 escreval("===================================================================")
 
-Escreval("Nome            |   N1  |   N2  |   N3  | MÈdia | SituaÁ„o   |")
+Escreval("Nome            |   N1  |   N2  |   N3  | M√©dia | Situa√ß√£o   |")
 Escreval("--------------------------------------------------------------")
 
 para linha de 1 ate 3 faca
