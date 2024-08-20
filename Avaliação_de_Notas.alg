@@ -2,7 +2,7 @@
 //escreva "Aprovado" para notas maiores que 5 e "Reprovado" para notas menores que 6.
 //para isso use quantas variáveis forem necessárias.
 
-algoritmo "Avaliação de Notas"
+algoritmo "Avaliação_de_Notas"
 var
    nomes, status: vetor[1..3] de caractere
    notas: vetor[1..3, 1..3] de numerico
@@ -24,10 +24,14 @@ para linha de 1 ate 3 faca
 
           media <- (notas[linha,1] + notas[linha,2] + notas[linha,3]) / 3
 
-          se media < 6 entao
-            status[linha] <- ("REPROVADO!")
+          se media > 6 entao
+            status[linha] <- ("APROVADO")
           senao
-            status[linha] <- ("APROVADO!")
+               se media < 5 entao
+                  status[linha] <- ("REPROVADO")
+               senao
+                    status[linha] <- ("RECUPERAÇÃO")
+               fimse
           Fimse
 
 
@@ -37,8 +41,10 @@ Escreva(" Média:", media:5:2," | ")
 Escreval(" Situação: ", status[linha]," | ")
 fimpara
 
-escreval("===================================================================")
+limpatela
 
+Escreval("TABELA")
+Escreval("--------------------------------------------------------------")
 Escreval("Nome            |   N1  |   N2  |   N3  | Média | Situação    |")
 Escreval("--------------------------------------------------------------")
 
