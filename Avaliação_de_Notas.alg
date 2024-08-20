@@ -1,5 +1,6 @@
-//A) Leia 3 Nomes, e para cada nome 3 notas, calcule a média dos alunos e ao final escreva "Aprovado" para notas maiores que 5 e "Reprovado" para notas menores que 6.
-para isso use quantas variáveis forem necessárias.
+//A) Leia 3 Nomes, e para cada nome 3 notas, calcule a média dos alunos e ao final
+//escreva "Aprovado" para notas maiores que 5 e "Reprovado" para notas menores que 6.
+//para isso use quantas variáveis forem necessárias.
 
 algoritmo "Avaliação de Notas"
 var
