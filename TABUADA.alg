@@ -1,5 +1,5 @@
-//PR�TICA DE ALGORITMO
-//1) Desenvolva um algoritmo e um programa em python. Que escreva na tela uma tabuada din�mica com todas as seguintes opera��es(+,-,*,/).
+//PRÁTICA DE ALGORITMO
+//1) Desenvolva um algoritmo e um programa em python. Que escreva na tela uma tabuada dinâmica com todas as seguintes operações(+,-,*,/).
 
 algoritmo "TABUADA"
 var
@@ -7,30 +7,72 @@ var
   numero: numerico
   operacao: caractere
 inicio
+//MENU SIMPLES
 escreval("MENU")
-escreval("ESCOLHA ENTRE AS OP��ES ABAIXO")
-escreval("1 - Qual a opera��o que voc� quer usar? (+, -, *, /). ")
+escreval("ESCOLHA ENTRE AS OPÇÕES ABAIXO")
+escreval("1 - Qual a operação que você quer usar? (+, -, *, /). ")
 escreval("2 - tabuada completa! (+, -, *, /). ")
 escreval("3 - Sair ")
-escreva("Digite aqui o n�mero: ")
+escreva("Digite aqui o número: ")
 
-//l� a escolha do usuario
+//lê a escolha do usuario
 leia(opcao)
 
 limpatela
 
 se opcao = 1 entao
-   escreval("Qual a opera��o vai querer usar?")
+   escreval("Qual a operação vai querer usar?")
    escreval("Escolha entre (+, -, *, /)")
    escreva("Digite aqui: ")
    leia(operacao)
 fimse
-se operacao = "*" entao
-   escreval("Qual o n�mero da tabuada que voc� quer?")
+//AQUI COMEÇA O ALGORITMO DA TABUADA!
+//SOMA
+se operacao = "+" entao
+   escreval("Qual o número da tabuada que você quer?")
    leia(numero)
-   limpatela
+   
+limpatela
+
+escreval("Aqui está sua tabuada!")
    para x de 1 ate 10 passo 1 faca
-        escreva(numero, " x ", x, " = ", numero * x)
+        escreval(numero, " + ", x, " = ", numero + x)
+   fimpara
+fimse
+//SUBTRAÇÃO
+se operacao = "-" entao
+   escreval("Qual o número da tabuada que você quer?")
+   leia(numero)
+
+limpatela
+
+escreval("Aqui está sua tabuada!")
+   para x de 1 ate 10 passo 1 faca
+        escreval(numero, " - ", x, " = ", numero - x)
+   fimpara
+fimse
+//MULTIPLICAÇÃO
+se operacao = "*" entao
+   escreval("Qual o número da tabuada que você quer?")
+   leia(numero)
+
+limpatela
+
+escreval("Aqui está sua tabuada!")
+   para x de 1 ate 10 passo 1 faca
+        escreval(numero, " x ", x, " = ", numero * x)
+   fimpara
+fimse
+//DIVISÃO
+se operacao = "/" entao
+   escreval("Qual o número da tabuada que você quer?")
+   leia(numero)
+
+limpatela
+
+escreval("Aqui está sua tabuada!")
+   para x de 1 ate 10 passo 1 faca
+        escreval(numero, " / ", x, " = ", numero / x)
    fimpara
 fimse
 
