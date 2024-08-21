@@ -15,12 +15,11 @@ escreval("2 - tabuada completa! (+, -, *, /). ")
 escreval("3 - Sair ")
 escreva("Digite aqui o número: ")
 
-//lê a escolha do usuario
-leia(opcao)
+leia(opcao) //lê a escolha do usuario
 
-limpatela
+limpatela  //VAI LIMPAR A TELA
 
-se opcao = 1 entao
+se opcao = 1 entao //ESTRUTURA CONDICIONAL
    escreval("Qual a operação vai querer usar?")
    escreval("Escolha entre (+, -, *, /)")
    escreva("Digite aqui: ")
@@ -75,6 +74,14 @@ escreval("Aqui está sua tabuada!")
         escreval(numero, " / ", x, " = ", numero / x)
    fimpara
 fimse
+//ESTRUTURA CONDICIONAL
+se opcao = 2 entao
+   escreval("Qual a operação vai querer usar?")
+   escreval("Escolha entre (+, -, *, /)")
+   escreva("Digite aqui: ")
+   leia(operacao)
+fimse
+
 
 
 
