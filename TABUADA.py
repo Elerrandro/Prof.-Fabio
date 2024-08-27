@@ -19,3 +19,16 @@ if opcao == 1:
     print("(+, -, *, /)")
     operacao = str(input("Digite aqui: "))
     numero = int(input("Qual o número da tabuada você quer: "))
+
+    if operacao == "+":
+        for x in range(1, 11):
+            print(numero, " + ", x, " = ", numero + x)
+    elif operacao == "-":
+        for x in range(1, 11):
+            print((x + numero), " - ", numero, " = ", (x + numero) - numero)
+    elif operacao == "*":
+        for x in range(1, 11):
+            print(numero, " * ", x, " = ", numero * x)
+    elif operacao == "/":
+        for x in range(1, 11):
+            print((x * numero), " / ", numero, " = ", (x * numero) / numero)
