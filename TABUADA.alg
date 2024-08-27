@@ -25,53 +25,38 @@ se opcao = 1 entao //ESTRUTURA CONDICIONAL
    escreva("Digite aqui: ")
    leia(operacao)
 fimse
+
+escreval("Qual o número da tabuada que você quer?")
+leia(numero)
+limpatela
 //AQUI COMEÇA O ALGORITMO DA TABUADA!
 //SOMA
 se operacao = "+" entao
-   escreval("Qual o número da tabuada que você quer?")
-   leia(numero)
-   
-limpatela
 
 escreval("Aqui está sua tabuada!")
    para x de 1 ate 10 passo 1 faca
-        escreval(numero, " + ", x, " = ", numero + x)
+        escreval(numero, " +", x, " = ", numero + x)
    fimpara
 fimse
 //SUBTRAÇÃO
 se operacao = "-" entao
-   escreval("Qual o número da tabuada que você quer?")
-   leia(numero)
-
-limpatela
-
 escreval("Aqui está sua tabuada!")
    para x de 1 ate 10 passo 1 faca
-        escreval(numero, " - ", x, " = ", numero - x)
+        escreval((x + numero), " -", numero, " = ", (x + numero) - numero)
    fimpara
 fimse
 //MULTIPLICAÇÃO
 se operacao = "*" entao
-   escreval("Qual o número da tabuada que você quer?")
-   leia(numero)
-
-limpatela
-
 escreval("Aqui está sua tabuada!")
    para x de 1 ate 10 passo 1 faca
-        escreval(numero, " x ", x, " = ", numero * x)
+        escreval(numero, " x", x, " = ", numero * x)
    fimpara
 fimse
 //DIVISÃO
 se operacao = "/" entao
-   escreval("Qual o número da tabuada que você quer?")
-   leia(numero)
-
-limpatela
-
 escreval("Aqui está sua tabuada!")
    para x de 1 ate 10 passo 1 faca
-        escreval(numero, " / ", x, " = ", numero / x)
+        escreval((x * numero), " /", numero, " = ", (x * numero) / numero)
    fimpara
 fimse
 //ESTRUTURA CONDICIONAL
