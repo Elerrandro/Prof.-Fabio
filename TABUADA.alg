@@ -3,8 +3,7 @@
 
 algoritmo "TABUADA"
 var
-  opcao, x: inteiro
-  numero: numerico
+  numero, opcao, x: inteiro
   operacao: caractere
 inicio
 //MENU SIMPLES
@@ -24,40 +23,38 @@ se opcao = 1 entao //ESTRUTURA CONDICIONAL
    escreval("Escolha entre (+, -, *, /)")
    escreva("Digite aqui: ")
    leia(operacao)
-fimse
-
-escreval("Qual o número da tabuada que você quer?")
-leia(numero)
+   escreval("Qual o número da tabuada que você quer?")
+   leia(numero)
 limpatela
 //AQUI COMEÇA O ALGORITMO DA TABUADA!
 //SOMA
-se operacao = "+" entao
-
-escreval("Aqui está sua tabuada!")
-   para x de 1 ate 10 passo 1 faca
-        escreval(numero, " +", x, " = ", numero + x)
-   fimpara
-fimse
+    se operacao = "+" entao
+       escreval("Aqui está sua tabuada!")
+       para x de 1 ate 10 passo 1 faca
+            escreval(numero, " +", x, " = ", numero + x)
+       fimpara
+    fimse
 //SUBTRAÇÃO
-se operacao = "-" entao
-escreval("Aqui está sua tabuada!")
-   para x de 1 ate 10 passo 1 faca
-        escreval((x + numero), " -", numero, " = ", (x + numero) - numero)
-   fimpara
-fimse
+    se operacao = "-" entao
+       escreval("Aqui está sua tabuada!")
+       para x de 1 ate 10 passo 1 faca
+            escreval((x + numero), " -", numero, " = ", (x + numero) - numero)
+       fimpara
+    fimse
 //MULTIPLICAÇÃO
-se operacao = "*" entao
-escreval("Aqui está sua tabuada!")
-   para x de 1 ate 10 passo 1 faca
-        escreval(numero, " x", x, " = ", numero * x)
-   fimpara
-fimse
+    se operacao = "*" entao
+       escreval("Aqui está sua tabuada!")
+       para x de 1 ate 10 passo 1 faca
+            escreval(numero, " x", x, " = ", numero * x)
+       fimpara
+    fimse
 //DIVISÃO
-se operacao = "/" entao
-escreval("Aqui está sua tabuada!")
-   para x de 1 ate 10 passo 1 faca
-        escreval((x * numero), " /", numero, " = ", (x * numero) / numero)
-   fimpara
+    se operacao = "/" entao
+       escreval("Aqui está sua tabuada!")
+       para x de 1 ate 10 passo 1 faca
+            escreval((x * numero), " /", numero, " = ", (x * numero) / numero)
+       fimpara
+    fimse
 fimse
 //ESTRUTURA CONDICIONAL
 se opcao = 2 entao
@@ -65,9 +62,54 @@ se opcao = 2 entao
    escreval("Escolha entre (+, -, *, /)")
    escreva("Digite aqui: ")
    leia(operacao)
+limpatela
+//TABUADA COMPLETA DE SOMA
+     se operacao = "+" entao
+     escreval("Aqui sua Tabuada Completa!")
+     escreval("===========================")
+         para numero de 1 ate 10 passo 1 faca
+              para x de 1 ate 10 passo 1 faca
+                   escreval(numero, " +", x, " = ", numero + x)
+              fimpara
+              escreval("===============")//LINHA DE SEPARAÇÃO
+         fimpara
+     fimse
+//TABUADA COMPLETA DE SUBTRAÇÃO
+     se operacao = "-" entao
+     escreval("Aqui sua Tabuada Completa!")
+     escreval("===========================")
+         para numero de 1 ate 10 passo 1 faca
+              para x de 1 ate 10 passo 1 faca
+                   escreval((x + numero), " -", numero, " = ", (x + numero) - numero)
+              fimpara
+              escreval("===============")//LINHA DE SEPARAÇÃO
+         fimpara
+     fimse
+//TABUADA COMPLETA DE MULTIPLICAÇÃO
+     se operacao = "*" entao
+     escreval("Aqui sua Tabuada Completa!")
+     escreval("===========================")
+         para numero de 1 ate 10 passo 1 faca
+              para x de 1 ate 10 passo 1 faca
+                   escreval(numero, " x", x, " = ", numero * x)
+              fimpara
+              escreval("===============")//LINHA DE SEPARAÇÃO
+         fimpara
+     fimse
+//TABUADA COMPLETA DE DIVISÃO
+     se operacao = "/" entao
+     escreval("Aqui sua Tabuada Completa!")
+     escreval("===========================")
+         para numero de 1 ate 10 passo 1 faca
+              para x de 1 ate 10 passo 1 faca
+                   escreval((x * numero), " /", numero, " = ", (x * numero) / numero)
+              fimpara
+              escreval("===============")//LINHA DE SEPARAÇÃO
+         fimpara
+     fimse
 fimse
 
-
-
-
+se opcao = "3" entao
+   escreval("ENCERRANDO ALGORITMO!")
+fimse
 fimalgoritmo
