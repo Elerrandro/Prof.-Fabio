@@ -1,0 +1,6 @@
+print("MENU")
+print("ESCOLHA ENTRE AS OPÇÕES ABAIXO")
+print("1 - Qual a operação que você quer usar? (+, -, *, /)")
+print("2 - Tabuada Completa! (+, -, *, /)")
+print("3 - SAIR")
+opcao = int(input("Digite aqui o número: "))
