@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Exibindo data e hora</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // obtem a data e hora atuais
+        var agora = new Date();
+        // obtem a hora e minutos atual
+        var hora = agora.getHours();
+        var minutos = agora.getMinutes();
+        // obtem a data
+        var data = agora.getDate();
+        var mes = agora.getMonth() + 1;
+        var ano = agora.getFullYear();
+
+        var nome = "visitante";
+        if(hora < 12)
+            document.write("Bom dia. Seja bem vindo senhor(a) " + nome + "!<br>");
+        else {
+            if(hora < 18)
+                document.write("Boa tarde. Seja bem vindo senhor(a) " + nome + "!<br>");
+            else
+                document.write("Boa noite. Seja bem vindo senhor(a) " + nome + "!<br>");
+    }
+        document.write("Agora são " + hora + ":" + minutos + " horas.");
+        document.write(" A data de hoje é " + data + "/" + mes + "/" + ano);
+    </script>
+</body>
+</html>
