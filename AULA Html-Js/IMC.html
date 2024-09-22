@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>IMC</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let peso = parseFloat(prompt("Digite o seu peso em kg:"));
+            let altura = parseFloat(prompt("Digite a sua altura em metros:"));
+
+            let IMC = peso / (altura ** 2);
+            IMC = IMC.toFixed(2)
+
+            document.write("O seu IMC é: " + IMC);
+
+            if (IMC < 17) {
+                document.write("<br>" + "Muito abaixo do peso")
+            } else if (IMC >= 17 && IMC < 18.5) {
+                document.write("<br>" + "Abaixo do peso")
+            } else if (IMC >= 18.5 && IMC < 25) {
+                document.write("<br>" + "Peso ideal")
+            } else if (IMC >= 25 && IMC < 30) {
+                document.write("<br>" + "Sobrepeso")
+            } else if (IMC >= 30 && IMC < 35) {
+                document.write("<br>" + "Obesidade")
+            } else if (IMC >= 35 && IMC < 40) {
+                document.write("<br>" + "Obesidade severa")
+            } else {
+                document.write("<br>" + "Obesidade morbida")
+            }
+        </script>
+    </body>
+</html>
