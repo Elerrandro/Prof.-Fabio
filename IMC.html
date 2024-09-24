@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="IMC.css">
+        <title>Cálculo de IMC</title>
+    </head>
+    <body>
+        <section>
+            <input type="number" placeholder="Digite o seu peso em kg: " id="peso">
+            <br>
+            <input type="number" placeholder="Digite o sua altura em metros: " id="altura">
+            <br>
+            <button onclick="Calcular()">Calcular</button><br>
+            <p id = "IMC"></p>
+        </section>
+        <script type="text/javascript">
+            function Calcular() {
+                let peso = parseFloat(document.getElementById("peso").value);
+                let altura = parseFloat(document.getElementById("altura").value);
+                let IMC = peso / (altura ** 2);
+                IMC = IMC.toFixed(2)
+
+                if (isNaN(peso) || isNaN(altura)) {
+                    alert("Por favor, preencha todos os campos.")
+                }
+                
+                if (isNaN(IMC)) {
+                    document.getElementById("IMC").textContent = "Por favor, preencha todos os campos."
+                    return
+                }
+
+                document.getElementById("IMC").textContent = "O seu IMC é: " + IMC;
+
+                if (IMC < 17) {
+                    document.getElementById("IMC").textContent += " Muito abaixo do peso"
+                } else if (IMC >= 17 && IMC < 18.5) {
+                    document.getElementById("IMC").textContent += " Abaixo do peso";
+                } else if (IMC >= 18.5 && IMC < 25) {
+                    document.getElementById("IMC").textContent += " Peso ideal"
+                } else if (IMC >= 25 && IMC < 30) {
+                    document.getElementById("IMC").textContent += " Sobrepeso"
+                } else if (IMC >= 30 && IMC < 35) {
+                    document.getElementById("IMC").textContent += " Obesidade"
+                } else if (IMC >= 35 && IMC < 40) {
+                    document.getElementById("IMC").textContent += " Obesidade severa"
+                } else
+                    document.getElementById("IMC").textContent += " Obesidade morbida"
+
+                document.getElementById("peso").value = "";
+                document.getElementById("altura").value = "";
+        }
+        </script>
+    </body>
+</html>
